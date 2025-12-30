@@ -2,12 +2,12 @@ import frappe
 from careers_grow.api.app.versions import VERSION_MAP
 
 @frappe.whitelist(allow_guest=True)
-def execute():
+def run():
     try:
         http_method = frappe.local.request.method
         payload = frappe.request.args.to_dict() if http_method == "GET" else (frappe.request.json or {})
-        method = payload.get("method")
         version_key = payload.get("version", "v1")
+        method = payload.get("method")
 
         version = VERSION_MAP.get(version_key)
         if not version:
