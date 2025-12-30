@@ -1,0 +1,314 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-16 17:26:07.078223",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_details_section",
+  "student_id",
+  "counsellor_id",
+  "column_break_7lfl",
+  "franchise_id",
+  "brain_dominance_section",
+  "left_brain",
+  "right_brain",
+  "column_break_opit",
+  "trfc",
+  "avg_trfc",
+  "brain_lobes_section",
+  "pre_frontal_lobe",
+  "frontal_lobe",
+  "temporal",
+  "column_break_ismq",
+  "parietal_lobe",
+  "occipital_lobe",
+  "neuron_distribution_section",
+  "left_brain_action",
+  "left_brain_think",
+  "left_brain_tactile",
+  "left_brain_auditory",
+  "left_brain_visual",
+  "column_break_ind9",
+  "right_brain_action",
+  "right_brain_think",
+  "right_brain_tactile",
+  "right_brain_auditory",
+  "right_brain_visual",
+  "learning_style_section",
+  "visual",
+  "auditory",
+  "column_break_uhta",
+  "kinesthetic",
+  "quotients_section",
+  "intelligence_quotient_iq",
+  "emotional_quotient_eq",
+  "column_break_z8id",
+  "adversity_quotient_aq",
+  "cultural_quotient_cq",
+  "section_break_hsow",
+  "management_skills",
+  "subject_selection_suitability",
+  "departments",
+  "activity_interest"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_details_section",
+   "fieldtype": "Section Break",
+   "label": "Student Details"
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "label": "Student ID",
+   "options": "Student"
+  },
+  {
+   "fieldname": "counsellor_id",
+   "fieldtype": "Link",
+   "label": "Counsellor ID",
+   "options": "Counsellor"
+  },
+  {
+   "fieldname": "column_break_7lfl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "franchise_id",
+   "fieldtype": "Link",
+   "label": "Franchise ID",
+   "options": "Franchise Partner"
+  },
+  {
+   "fieldname": "brain_dominance_section",
+   "fieldtype": "Section Break",
+   "label": "Brain Dominance"
+  },
+  {
+   "fieldname": "left_brain",
+   "fieldtype": "Percent",
+   "label": "Left Brain"
+  },
+  {
+   "fieldname": "right_brain",
+   "fieldtype": "Percent",
+   "label": "Right Brain"
+  },
+  {
+   "fieldname": "column_break_opit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trfc",
+   "fieldtype": "Float",
+   "label": "TRFC"
+  },
+  {
+   "fieldname": "avg_trfc",
+   "fieldtype": "Float",
+   "label": "Avg TRFC"
+  },
+  {
+   "fieldname": "brain_lobes_section",
+   "fieldtype": "Section Break",
+   "label": "Brain Lobes"
+  },
+  {
+   "fieldname": "pre_frontal_lobe",
+   "fieldtype": "Percent",
+   "label": "Pre Frontal Lobe"
+  },
+  {
+   "fieldname": "frontal_lobe",
+   "fieldtype": "Percent",
+   "label": "Frontal Lobe"
+  },
+  {
+   "fieldname": "temporal",
+   "fieldtype": "Percent",
+   "label": "Temporal"
+  },
+  {
+   "fieldname": "column_break_ismq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parietal_lobe",
+   "fieldtype": "Percent",
+   "label": "Parietal Lobe"
+  },
+  {
+   "fieldname": "occipital_lobe",
+   "fieldtype": "Percent",
+   "label": "Occipital Lobe"
+  },
+  {
+   "fieldname": "neuron_distribution_section",
+   "fieldtype": "Section Break",
+   "label": "Neuron Distribution"
+  },
+  {
+   "fieldname": "left_brain_action",
+   "fieldtype": "Percent",
+   "label": "Left Brain Action"
+  },
+  {
+   "fieldname": "left_brain_think",
+   "fieldtype": "Percent",
+   "label": "Left Brain Think"
+  },
+  {
+   "fieldname": "left_brain_tactile",
+   "fieldtype": "Percent",
+   "label": "Left Brain Tactile"
+  },
+  {
+   "fieldname": "left_brain_auditory",
+   "fieldtype": "Percent",
+   "label": "Left Brain Auditory"
+  },
+  {
+   "fieldname": "left_brain_visual",
+   "fieldtype": "Percent",
+   "label": "Left Brain Visual"
+  },
+  {
+   "fieldname": "column_break_ind9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "right_brain_action",
+   "fieldtype": "Percent",
+   "label": "Right Brain Action"
+  },
+  {
+   "fieldname": "right_brain_think",
+   "fieldtype": "Percent",
+   "label": "Right Brain Think"
+  },
+  {
+   "fieldname": "right_brain_tactile",
+   "fieldtype": "Percent",
+   "label": "Right Brain Tactile"
+  },
+  {
+   "fieldname": "right_brain_auditory",
+   "fieldtype": "Percent",
+   "label": "Right Brain Auditory"
+  },
+  {
+   "fieldname": "right_brain_visual",
+   "fieldtype": "Percent",
+   "label": "Right Brain Visual"
+  },
+  {
+   "fieldname": "learning_style_section",
+   "fieldtype": "Section Break",
+   "label": "Learning Style"
+  },
+  {
+   "fieldname": "visual",
+   "fieldtype": "Percent",
+   "label": "Visual"
+  },
+  {
+   "fieldname": "auditory",
+   "fieldtype": "Percent",
+   "label": "Auditory"
+  },
+  {
+   "fieldname": "column_break_uhta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kinesthetic",
+   "fieldtype": "Percent",
+   "label": "Kinesthetic"
+  },
+  {
+   "fieldname": "quotients_section",
+   "fieldtype": "Section Break",
+   "label": "Quotients"
+  },
+  {
+   "fieldname": "intelligence_quotient_iq",
+   "fieldtype": "Percent",
+   "label": "Intelligence Quotient (IQ)"
+  },
+  {
+   "fieldname": "emotional_quotient_eq",
+   "fieldtype": "Percent",
+   "label": "Emotional Quotient (EQ)"
+  },
+  {
+   "fieldname": "column_break_z8id",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adversity_quotient_aq",
+   "fieldtype": "Percent",
+   "label": "Adversity Quotient (AQ)"
+  },
+  {
+   "fieldname": "cultural_quotient_cq",
+   "fieldtype": "Percent",
+   "label": "Cultural Quotient (CQ)"
+  },
+  {
+   "fieldname": "section_break_hsow",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "management_skills",
+   "fieldtype": "Table",
+   "label": "Management Skills",
+   "options": "DMIT Management Skill"
+  },
+  {
+   "fieldname": "subject_selection_suitability",
+   "fieldtype": "Table",
+   "label": "Subject Selection Suitability",
+   "options": "Subject Selection Suitability"
+  },
+  {
+   "fieldname": "departments",
+   "fieldtype": "Table",
+   "label": "Departments",
+   "options": "DMIT Department"
+  },
+  {
+   "fieldname": "activity_interest",
+   "fieldtype": "Table",
+   "label": "Activity Interest",
+   "options": "DMIT Activity Interest"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-19 20:19:21.892752",
+ "modified_by": "Administrator",
+ "module": "Careers Grow",
+ "name": "DMIT Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,264 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-16 12:45:56.565973",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_break_u38p",
+  "franchise_details_section",
+  "franchise_id",
+  "franchise_name",
+  "notes",
+  "column_break_4vbg",
+  "franchise_type",
+  "status",
+  "tab_break_g672",
+  "contact_details",
+  "owner__contact_person_name",
+  "email",
+  "column_break_iytx",
+  "phone_number",
+  "alternate_phone",
+  "address_details_section",
+  "address",
+  "address_line_1",
+  "address_line_2",
+  "column_break_tdue",
+  "city",
+  "state",
+  "pincode",
+  "column_break_ylap",
+  "country",
+  "gst_details_section",
+  "gst_number",
+  "column_break_wart",
+  "pan_number",
+  "agreement_details_section",
+  "agreement_id",
+  "agreement_status",
+  "commission_",
+  "column_break_eczh",
+  "agreement_start_date",
+  "agreement_end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_break_u38p",
+   "fieldtype": "Tab Break",
+   "label": "Franchise Details"
+  },
+  {
+   "fieldname": "franchise_details_section",
+   "fieldtype": "Section Break",
+   "label": "Franchise Details"
+  },
+  {
+   "fieldname": "franchise_id",
+   "fieldtype": "Data",
+   "label": "Franchise ID"
+  },
+  {
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_4vbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "franchise_type",
+   "fieldtype": "Link",
+   "label": "Franchise Type",
+   "options": "Franchise Type"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "label": "Status",
+   "options": "Status"
+  },
+  {
+   "fieldname": "tab_break_g672",
+   "fieldtype": "Tab Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "contact_details",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "owner__contact_person_name",
+   "fieldtype": "Data",
+   "label": "Owner / Contact Person Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_iytx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "alternate_phone",
+   "fieldtype": "Phone",
+   "label": "Alternate Phone"
+  },
+  {
+   "fieldname": "address_details_section",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fetch_from": "address.address_line1",
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fetch_from": "address.address_line2",
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "column_break_tdue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "address.city",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fetch_from": "address.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fetch_from": "address.pincode",
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "column_break_ylap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "address.country",
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "gst_details_section",
+   "fieldtype": "Section Break",
+   "label": "GST Details"
+  },
+  {
+   "fetch_from": "address.gstin",
+   "fieldname": "gst_number",
+   "fieldtype": "Data",
+   "label": "GST Number"
+  },
+  {
+   "fieldname": "column_break_wart",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "PAN Number"
+  },
+  {
+   "fieldname": "agreement_details_section",
+   "fieldtype": "Section Break",
+   "label": "Agreement Details"
+  },
+  {
+   "fieldname": "agreement_id",
+   "fieldtype": "Link",
+   "label": "Agreement Id",
+   "options": "Agreement"
+  },
+  {
+   "fetch_from": "agreement_id.status",
+   "fieldname": "agreement_status",
+   "fieldtype": "Link",
+   "label": "Agreement Status",
+   "options": "Status"
+  },
+  {
+   "fetch_from": "agreement_id.commission_",
+   "fieldname": "commission_",
+   "fieldtype": "Percent",
+   "label": "Commission %"
+  },
+  {
+   "fieldname": "column_break_eczh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "agreement_id.start_date",
+   "fieldname": "agreement_start_date",
+   "fieldtype": "Date",
+   "label": "Agreement Start Date"
+  },
+  {
+   "fetch_from": "agreement_id.end_date",
+   "fieldname": "agreement_end_date",
+   "fieldtype": "Date",
+   "label": "Agreement End Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-19 20:26:08.975287",
+ "modified_by": "Administrator",
+ "module": "Careers Grow",
+ "name": "Franchise Partner",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-16 14:27:00.795687",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qnzk",
+  "associated_franchise_id",
+  "counsellor_id",
+  "counsellor_name",
+  "date_of_birth",
+  "gender",
+  "specialization",
+  "certification_details",
+  "column_break_y5hn",
+  "qualification",
+  "experience_years",
+  "status",
+  "notes",
+  "section_break_wg6s",
+  "email",
+  "alternate_phone",
+  "column_break_ivkf",
+  "phone_number",
+  "address_details_section",
+  "address",
+  "address_line_1",
+  "city",
+  "column_break_vhvg",
+  "state",
+  "pincode"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qnzk",
+   "fieldtype": "Section Break",
+   "label": "Counsellor Details"
+  },
+  {
+   "fieldname": "associated_franchise_id",
+   "fieldtype": "Link",
+   "label": "Associated Franchise ID",
+   "options": "Franchise Partner"
+  },
+  {
+   "fieldname": "counsellor_id",
+   "fieldtype": "Data",
+   "label": "Counsellor ID"
+  },
+  {
+   "fieldname": "counsellor_name",
+   "fieldtype": "Data",
+   "label": "Counsellor Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "label": "Specialization",
+   "options": "Specialization"
+  },
+  {
+   "fieldname": "certification_details",
+   "fieldtype": "Link",
+   "label": "Certification Details",
+   "options": "Certification Details"
+  },
+  {
+   "fieldname": "column_break_y5hn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Link",
+   "label": "Qualification",
+   "options": "Qualification"
+  },
+  {
+   "fieldname": "experience_years",
+   "fieldtype": "Int",
+   "label": "Experience (Years)"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "label": "Status",
+   "options": "Status"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "section_break_wg6s",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "alternate_phone",
+   "fieldtype": "Phone",
+   "label": "Alternate Phone"
+  },
+  {
+   "fieldname": "column_break_ivkf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "address_details_section",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fetch_from": "address.address_line1",
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fetch_from": "address.city",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_vhvg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "address.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fetch_from": "address.pincode",
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-19 20:24:52.380637",
+ "modified_by": "Administrator",
+ "module": "Careers Grow",
+ "name": "Counsellor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
