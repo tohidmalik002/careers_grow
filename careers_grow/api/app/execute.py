@@ -7,8 +7,8 @@ def run():
     try:
         http_method = frappe.local.request.method
         payload = frappe.request.args.to_dict() if http_method == "GET" else (frappe.request.json or {})
-        version_key = payload.get("version", "v1")
-        method = payload.get("method")
+        version_key = payload.pop("version", "v1")
+        method = payload.pop("method")
 
         version = VERSION_MAP.get(version_key)
         if not version:
