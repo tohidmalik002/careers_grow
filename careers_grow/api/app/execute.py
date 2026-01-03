@@ -3,6 +3,7 @@ from careers_grow.api.app.versions import VERSION_MAP
 
 @frappe.whitelist(allow_guest=True)
 def run():
+    version_key = None
     try:
         http_method = frappe.local.request.method
         payload = frappe.request.args.to_dict() if http_method == "GET" else (frappe.request.json or {})
