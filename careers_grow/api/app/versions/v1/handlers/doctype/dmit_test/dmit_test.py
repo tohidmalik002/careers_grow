@@ -1,3 +1,5 @@
+import frappe
+
 def get_dmit_test_data_from_token(payload):
     return {
         "multiple_intelligences": {

@@ -23,7 +23,7 @@ def run():
 
         if http_method not in route.get("methods", []):
             frappe.throw("Method not allowed")
-
+        
         version.authenticate(route)
 
         result = version.dispatch(route, payload)
