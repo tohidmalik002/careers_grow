@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:student_id",
  "creation": "2025-12-16 12:44:44.694992",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,8 +9,7 @@
   "personal_details_tab",
   "student_details",
   "student_id",
-  "first_name",
-  "last_name",
+  "full_name",
   "column_break_l18i",
   "gender",
   "date_of_birth",
@@ -58,17 +58,8 @@
   {
    "fieldname": "student_id",
    "fieldtype": "Data",
-   "label": "Student ID"
-  },
-  {
-   "fieldname": "first_name",
-   "fieldtype": "Data",
-   "label": "First Name"
-  },
-  {
-   "fieldname": "last_name",
-   "fieldtype": "Data",
-   "label": "Last Name"
+   "label": "Student ID",
+   "unique": 1
   },
   {
    "fieldname": "column_break_l18i",
@@ -244,15 +235,21 @@
    "fieldname": "notes",
    "fieldtype": "Text",
    "label": "Notes"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Student Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-19 20:22:57.585135",
+ "modified": "2026-01-18 19:35:11.167291",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Student",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

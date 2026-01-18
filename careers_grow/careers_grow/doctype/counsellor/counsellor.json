@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:counsellor_id",
  "creation": "2025-12-16 14:27:00.795687",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,7 +10,7 @@
   "section_break_qnzk",
   "associated_franchise_id",
   "counsellor_id",
-  "counsellor_name",
+  "full_name",
   "date_of_birth",
   "gender",
   "specialization",
@@ -47,12 +48,8 @@
   {
    "fieldname": "counsellor_id",
    "fieldtype": "Data",
-   "label": "Counsellor ID"
-  },
-  {
-   "fieldname": "counsellor_name",
-   "fieldtype": "Data",
-   "label": "Counsellor Name"
+   "label": "Counsellor ID",
+   "unique": 1
   },
   {
    "fieldname": "date_of_birth",
@@ -164,15 +161,21 @@
    "fieldname": "pincode",
    "fieldtype": "Data",
    "label": "Pincode"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Counsellor Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-19 20:24:52.380637",
+ "modified": "2026-01-18 19:33:58.894589",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Counsellor",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

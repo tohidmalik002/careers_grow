@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:DMIT-{#####}",
  "creation": "2025-12-16 17:26:07.078223",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,8 +9,11 @@
   "student_details_section",
   "student_id",
   "counsellor_id",
-  "column_break_7lfl",
   "franchise_id",
+  "column_break_7lfl",
+  "student_name",
+  "counsellor_name",
+  "franchise_name",
   "brain_dominance_section",
   "left_brain",
   "right_brain",
@@ -282,15 +286,34 @@
    "fieldtype": "Table",
    "label": "Activity Interest",
    "options": "DMIT Activity Interest"
+  },
+  {
+   "fetch_from": "student_id.full_name",
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student Name"
+  },
+  {
+   "fetch_from": "counsellor_id.full_name",
+   "fieldname": "counsellor_name",
+   "fieldtype": "Data",
+   "label": "Counsellor Name"
+  },
+  {
+   "fetch_from": "franchise_id.full_name",
+   "fieldname": "franchise_name",
+   "fieldtype": "Data",
+   "label": "Franchise Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-19 20:19:21.892752",
+ "modified": "2026-01-18 19:32:41.690454",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "DMIT Test",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

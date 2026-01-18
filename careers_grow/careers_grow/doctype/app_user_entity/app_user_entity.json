@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{entity_type}-{entity}",
  "creation": "2025-12-16 18:40:34.129251",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -38,10 +39,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-19 20:18:43.586697",
+ "modified": "2026-01-18 19:37:59.341953",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "App User Entity",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
