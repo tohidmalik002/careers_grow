@@ -46,24 +46,8 @@ def get_dmit_test_list(payload):
 
     dmit_list = frappe.get_all("DMIT Test", ['student_id', 'student_name', 'modified'], filters, order_by='modified desc')
 
+    for r in dmit_list:
+        r["student_id"] = f"({r['student_id']})"
+        r["modified"] = str(r["modified"]).split(".")[0]
+
     return dmit_list
-
-
-
-
-    return {
-        "multiple_intelligences": {
-            "logical":"100%",
-            "linguistic":"100%",
-            "interpersonal":"100%",
-            "naturalistic":"100%",
-            "kinesthetic":"100%",
-            "visual_spatial":"100%",
-            "intrapersonal":"100%",
-            "musical":"100%"
-        },
-        "personality_type":{
-            "naturalistic":"100%",
-            "musical":"100%"
-        }
-    }
