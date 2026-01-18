@@ -69,7 +69,11 @@ def authenticate_request():
     if not auth_header or not auth_header.startswith("token"):
         frappe.throw("Authorization header missing or invalid", frappe.AuthenticationError)
 
-    token = auth_header.split(" ")[1]
+    token = auth_header.split(" ")
+    if len(token) < 2:
+        frappe.throw("Authorization header missing or invalid", frappe.AuthenticationError)
+        
+    token = token[1]
     api_secret = frappe.utils.password.get_encryption_key()
 
     payload = decode_jwt(token, api_secret, "HS256")
