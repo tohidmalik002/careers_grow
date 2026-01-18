@@ -13,5 +13,10 @@ ROUTES = {
         "func": "careers_grow.api.app.versions.v1.handlers.doctype.dmit_test.dmit_test.get_dmit_test_data_from_token",
         "methods": ["GET"],
         "auth_required": False
+    },
+    "get_dmit_test_list": {
+        "func": "careers_grow.api.app.versions.v1.handlers.doctype.dmit_test.dmit_test.get_dmit_test_list",
+        "methods": ["GET"],
+        "auth_required": True
     }
 }

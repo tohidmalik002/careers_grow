@@ -23,7 +23,7 @@ def login(payload: dict) -> dict:
     user = frappe.get_doc("App User", username) 
 
     if frappe.utils.password.get_decrypted_password("App User", username, fieldname="password") == password:
-        user_details = {"username": user.username, "full_name": user.first_name.strip() + ' ' + user.last_name, "role": user.role_profile}
+        user_details = {"username": user.username, "full_name": user.full_name, "role": user.role_profile}
         token = generate_jwt_token(user_details, frappe.utils.password.get_encryption_key(), "HS256")        
         return {"message": "Login successful.", "token": token, "user": user_details}
     else:

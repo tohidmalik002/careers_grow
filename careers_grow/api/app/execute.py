@@ -16,7 +16,7 @@ def run():
 
         if not method:
             frappe.throw("Missing API Method")
-
+        
         route = version.get_route(method)
         if not route:
             frappe.throw("Unknown API path")

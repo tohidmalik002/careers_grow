@@ -6,24 +6,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "first_name",
-  "last_name",
+  "full_name",
   "email",
   "username",
   "password",
   "role_profile"
  ],
  "fields": [
-  {
-   "fieldname": "first_name",
-   "fieldtype": "Data",
-   "label": "First Name"
-  },
-  {
-   "fieldname": "last_name",
-   "fieldtype": "Data",
-   "label": "Last Name"
-  },
   {
    "fieldname": "email",
    "fieldtype": "Data",
@@ -45,12 +34,17 @@
    "fieldtype": "Link",
    "label": "Role Profile",
    "options": "Role Profile"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-04 21:29:12.864743",
+ "modified": "2026-01-18 15:10:02.140238",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "App User",
