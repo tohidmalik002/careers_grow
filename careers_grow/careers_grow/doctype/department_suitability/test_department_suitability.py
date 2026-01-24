@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestDMITDepartmentMaster(FrappeTestCase):
+class TestDepartmentSuitability(FrappeTestCase):
 	pass

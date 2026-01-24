@@ -1,8 +1,8 @@
 {
  "actions": [],
- "allow_rename": 1,
  "creation": "2025-12-16 18:08:18.648168",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "section_break_oxkb",
@@ -30,7 +30,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-19 20:20:19.584619",
+ "modified": "2026-01-24 23:17:47.430109",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "DMIT Management Skill",
