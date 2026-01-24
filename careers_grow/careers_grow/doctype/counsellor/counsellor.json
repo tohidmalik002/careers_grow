@@ -9,8 +9,8 @@
  "field_order": [
   "section_break_qnzk",
   "associated_franchise_id",
-  "counsellor_id",
   "full_name",
+  "counsellor_id",
   "date_of_birth",
   "gender",
   "specialization",
@@ -42,7 +42,7 @@
   {
    "fieldname": "associated_franchise_id",
    "fieldtype": "Link",
-   "label": "Associated Franchise ID",
+   "label": "Associated Franchise",
    "options": "Franchise Partner"
   },
   {
@@ -171,7 +171,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-18 19:33:58.894589",
+ "modified": "2026-01-24 15:03:22.460831",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Counsellor",
@@ -193,7 +193,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }

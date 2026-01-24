@@ -1,7 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "format:name1",
+ "autoname": "field:name1",
  "creation": "2025-12-16 18:04:01.174845",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,17 +11,19 @@
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name"
+   "in_list_view": 1,
+   "label": "Name",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-19 20:22:12.092366",
+ "modified": "2026-01-24 22:45:46.218455",
  "modified_by": "Administrator",
  "module": "Careers Grow",
- "name": "DMIT Department Master",
- "naming_rule": "Expression",
+ "name": "Department Suitability",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

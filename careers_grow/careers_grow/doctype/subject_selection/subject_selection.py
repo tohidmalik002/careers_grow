@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class DMITDepartmentMaster(Document):
+class SubjectSelection(Document):
 	pass

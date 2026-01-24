@@ -6,20 +6,27 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "management_skills",
   "name1"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Name",
    "unique": 1
+  },
+  {
+   "fieldname": "management_skills",
+   "fieldtype": "Section Break",
+   "label": "Management Skill"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-19 20:22:40.442044",
+ "modified": "2026-01-24 23:00:23.951275",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Management Skill",

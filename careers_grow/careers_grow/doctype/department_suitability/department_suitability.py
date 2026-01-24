@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class SubjectSelectionSuitability(Document):
+class DepartmentSuitability(Document):
 	pass

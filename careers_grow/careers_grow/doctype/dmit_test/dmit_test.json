@@ -8,10 +8,10 @@
  "field_order": [
   "student_details_section",
   "student_id",
-  "counsellor_id",
   "franchise_id",
-  "column_break_7lfl",
   "student_name",
+  "column_break_7lfl",
+  "counsellor_id",
   "counsellor_name",
   "franchise_name",
   "brain_dominance_section",
@@ -65,13 +65,14 @@
   {
    "fieldname": "student_id",
    "fieldtype": "Link",
-   "label": "Student ID",
+   "label": "Select Student",
    "options": "Student"
   },
   {
+   "fetch_from": "student_id.counsellor_id",
    "fieldname": "counsellor_id",
    "fieldtype": "Link",
-   "label": "Counsellor ID",
+   "label": "Select Counsellor",
    "options": "Counsellor"
   },
   {
@@ -79,9 +80,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "student_id.franchise_id",
    "fieldname": "franchise_id",
    "fieldtype": "Link",
-   "label": "Franchise ID",
+   "label": "Select Franchise",
    "options": "Franchise Partner"
   },
   {
@@ -273,7 +275,7 @@
    "fieldname": "subject_selection_suitability",
    "fieldtype": "Table",
    "label": "Subject Selection Suitability",
-   "options": "Subject Selection Suitability"
+   "options": "Subject Selection"
   },
   {
    "fieldname": "departments",
@@ -291,25 +293,31 @@
    "fetch_from": "student_id.full_name",
    "fieldname": "student_name",
    "fieldtype": "Data",
-   "label": "Student Name"
+   "hidden": 1,
+   "label": "Student Name",
+   "read_only": 1
   },
   {
    "fetch_from": "counsellor_id.full_name",
    "fieldname": "counsellor_name",
    "fieldtype": "Data",
-   "label": "Counsellor Name"
+   "hidden": 1,
+   "label": "Counsellor Name",
+   "read_only": 1
   },
   {
    "fetch_from": "franchise_id.full_name",
    "fieldname": "franchise_name",
    "fieldtype": "Data",
-   "label": "Franchise Name"
+   "hidden": 1,
+   "label": "Franchise Name",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-18 19:32:41.690454",
+ "modified": "2026-01-24 23:12:56.911598",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "DMIT Test",
