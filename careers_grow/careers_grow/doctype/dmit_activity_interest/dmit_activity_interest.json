@@ -18,7 +18,8 @@
    "fieldname": "activity",
    "fieldtype": "Link",
    "label": "Activity",
-   "options": "Activity Interest"
+   "options": "Activity Interest",
+   "read_only": 1
   },
   {
    "fieldname": "score",
@@ -30,7 +31,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-24 23:18:19.562237",
+ "modified": "2026-01-25 02:09:27.092023",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "DMIT Activity Interest",

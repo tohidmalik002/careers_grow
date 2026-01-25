@@ -19,6 +19,7 @@
    "fieldtype": "Link",
    "label": "Department",
    "options": "Department Suitability",
+   "read_only": 1,
    "unique": 1
   },
   {
@@ -31,7 +32,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-24 23:17:57.313743",
+ "modified": "2026-01-25 02:09:47.485147",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "DMIT Department",
