@@ -18,7 +18,8 @@
    "fieldname": "management_skill",
    "fieldtype": "Link",
    "label": "Management Skill",
-   "options": "Management Skill"
+   "options": "Management Skill",
+   "read_only": 1
   },
   {
    "fieldname": "score",
@@ -30,7 +31,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-24 23:17:47.430109",
+ "modified": "2026-01-25 02:07:12.382836",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "DMIT Management Skill",
