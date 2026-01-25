@@ -294,6 +294,7 @@
    "fieldname": "student_name",
    "fieldtype": "Data",
    "hidden": 1,
+   "in_list_view": 1,
    "label": "Student Name",
    "read_only": 1
   },
@@ -302,6 +303,7 @@
    "fieldname": "counsellor_name",
    "fieldtype": "Data",
    "hidden": 1,
+   "in_list_view": 1,
    "label": "Counsellor Name",
    "read_only": 1
   },
@@ -317,7 +319,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-24 23:12:56.911598",
+ "modified": "2026-01-25 00:39:53.108510",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "DMIT Test",
