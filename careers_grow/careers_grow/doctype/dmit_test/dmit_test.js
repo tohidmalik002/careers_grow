@@ -8,6 +8,34 @@ frappe.ui.form.on("DMIT Test", {
 		setup_table(frm, "departments", "Department Suitability", "department");
 		setup_table(frm, "activity_interest", "Activity Interest", "activity");
 	},
+	validate(frm) {
+		frm.meta.fields.forEach((field) => {
+			if (field.fieldtype === "Percent") {
+				const value = frm.doc[field.fieldname];
+				if (value != null && (value < 0 || value > 100)) {
+					frappe.msgprint(__("Value for {0} must be between 0 and 100", [field.label]));
+					frappe.validated = false;
+				}
+			}
+		});
+
+		const child_tables = [
+			"management_skills",
+			"subject_selection_suitability",
+			"departments",
+			"activity_interest",
+		];
+		child_tables.forEach((table) => {
+			(frm.doc[table] || []).forEach((row) => {
+				if (row.score != null && (row.score < 0 || row.score > 10)) {
+					frappe.msgprint(
+						__("Score in table {0} row {1} must be between 0 and 10", [table, row.idx])
+					);
+					frappe.validated = false;
+				}
+			});
+		});
+	},
 });
 
 function setup_table(frm, table_field, master_doctype, link_field) {
