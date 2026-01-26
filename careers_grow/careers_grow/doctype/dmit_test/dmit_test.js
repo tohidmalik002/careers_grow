@@ -18,7 +18,7 @@ function setup_table(frm, table_field, master_doctype, link_field) {
 	// Force refresh to ensure properties invoke
 	frm.refresh_field(table_field);
 
-	if (frm.is_new() && !frm.doc[table_field]?.length) {
+	if (frm.is_new() || !frm.doc[table_field]?.length) {
 		frappe.call({
 			method: "frappe.client.get_list",
 			args: {
