@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "field:name1",
  "creation": "2025-12-16 14:06:46.423671",
  "doctype": "DocType",
@@ -24,7 +23,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-19 20:26:24.546218",
+ "modified": "2026-01-25 13:34:02.992131",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Franchise Type",

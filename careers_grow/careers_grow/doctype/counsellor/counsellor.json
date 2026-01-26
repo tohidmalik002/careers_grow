@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "field:counsellor_id",
  "creation": "2025-12-16 14:27:00.795687",
  "default_view": "List",
@@ -171,7 +170,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-24 15:03:22.460831",
+ "modified": "2026-01-25 13:32:16.243157",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Counsellor",

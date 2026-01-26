@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "format:DMIT-{#####}",
  "creation": "2025-12-16 17:26:07.078223",
  "doctype": "DocType",
@@ -294,7 +293,6 @@
    "fieldname": "student_name",
    "fieldtype": "Data",
    "hidden": 1,
-   "in_list_view": 1,
    "label": "Student Name",
    "read_only": 1
   },
@@ -303,7 +301,6 @@
    "fieldname": "counsellor_name",
    "fieldtype": "Data",
    "hidden": 1,
-   "in_list_view": 1,
    "label": "Counsellor Name",
    "read_only": 1
   },
@@ -319,7 +316,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-25 00:39:53.108510",
+ "modified": "2026-01-25 13:31:54.218659",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "DMIT Test",

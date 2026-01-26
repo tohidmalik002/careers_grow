@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "field:student_id",
  "creation": "2025-12-16 12:44:44.694992",
  "doctype": "DocType",
@@ -245,7 +244,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-24 23:06:28.153299",
+ "modified": "2026-01-25 13:29:25.177020",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Student",
