@@ -29,8 +29,10 @@ def get_dmit_test_list(payload):
 
 
 def get_dmit_test_data(payload):
-	if not payload.get("student_id"):
+	student_id = payload.get("student_id")
+	if not student_id:
 		frappe.throw("Student ID is required")
+	student_id = student_id.replace("(", "").replace(")", "")
 
 	user_details = frappe.local.jwt_payload
 
