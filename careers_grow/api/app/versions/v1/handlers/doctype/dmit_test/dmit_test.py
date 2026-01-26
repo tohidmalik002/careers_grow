@@ -44,10 +44,10 @@ def get_dmit_test_data(payload):
 		filters["student_id"] = entity
 	elif entity_type == "Counsellor":
 		filters["counsellor_id"] = entity
-		filters["student_id"] = payload.get("student_id")
+		filters["student_id"] = student_id
 	elif entity_type == "Franchise Partner":
 		filters["franchise_id"] = entity
-		filters["student_id"] = payload.get("student_id")
+		filters["student_id"] = student_id
 	else:
 		frappe.throw("Invalid User Entity Type")
 
@@ -126,11 +126,11 @@ def get_dmit_test_data(payload):
 		"brain_dominance": {
 			"left_brain": {
 				"text": float_to_percentage_string(doc.get("left_brain")),
-				"progress_value": doc.get("left_brain", 00.0),
+				"progress_value": doc.get("left_brain", 00.0) / 100,
 			},
 			"right_brain": {
 				"text": float_to_percentage_string(doc.get("right_brain")),
-				"progress_value": doc.get("right_brain", 00.0),
+				"progress_value": doc.get("right_brain", 00.0) / 100,
 			},
 			"trfc": doc.get("trfc", 00.0),
 			"avg_trfc": doc.get("avg_trfc", 00.0),
@@ -142,23 +142,23 @@ def get_dmit_test_data(payload):
 		"brain_lobes": {
 			"pre_frontal": {
 				"text": float_to_percentage_string(doc.get("pre_frontal_lobe")),
-				"progress_value": doc.get("pre_frontal_lobe", 00.0),
+				"progress_value": doc.get("pre_frontal_lobe", 00.0) / 100,
 			},
 			"frontal": {
 				"text": float_to_percentage_string(doc.get("frontal_lobe")),
-				"progress_value": doc.get("frontal_lobe", 00.0),
+				"progress_value": doc.get("frontal_lobe", 00.0) / 100,
 			},
 			"parietal": {
 				"text": float_to_percentage_string(doc.get("parietal_lobe")),
-				"progress_value": doc.get("parietal_lobe", 00.0),
+				"progress_value": doc.get("parietal_lobe", 00.0) / 100,
 			},
 			"temporal": {
 				"text": float_to_percentage_string(doc.get("temporal")),
-				"progress_value": doc.get("temporal", 00.0),
+				"progress_value": doc.get("temporal", 00.0) / 100,
 			},
 			"occipital": {
 				"text": float_to_percentage_string(doc.get("occipital_lobe")),
-				"progress_value": doc.get("occipital_lobe", 00.0),
+				"progress_value": doc.get("occipital_lobe", 00.0) / 100,
 			},
 		},
 		"neuron_distribution": {
@@ -180,15 +180,15 @@ def get_dmit_test_data(payload):
 		"learning_style": {
 			"auditory": {
 				"text": float_to_percentage_string(doc.get("auditory")),
-				"progress_value": doc.get("auditory", 00.0),
+				"progress_value": doc.get("auditory", 00.0) / 100,
 			},
 			"kinesthetic": {
 				"text": float_to_percentage_string(doc.get("kinesthetic")),
-				"progress_value": doc.get("kinesthetic", 00.0),
+				"progress_value": doc.get("kinesthetic", 00.0) / 100,
 			},
 			"visual": {
 				"text": float_to_percentage_string(doc.get("visual")),
-				"progress_value": doc.get("visual", 00.0),
+				"progress_value": doc.get("visual", 00.0) / 100,
 			},
 		},
 		"quotients": {
