@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "format:{#####}",
  "creation": "2025-12-16 13:02:00.971204",
  "doctype": "DocType",
@@ -48,7 +47,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-19 20:26:35.918890",
+ "modified": "2026-01-25 13:33:12.529321",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Agreement",

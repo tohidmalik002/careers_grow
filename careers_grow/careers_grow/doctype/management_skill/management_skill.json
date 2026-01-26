@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "field:name1",
  "creation": "2025-12-16 17:45:24.425546",
  "doctype": "DocType",
@@ -26,7 +25,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-24 23:00:23.951275",
+ "modified": "2026-01-25 13:32:06.153114",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Management Skill",

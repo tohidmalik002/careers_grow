@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "creation": "2025-12-16 16:19:46.035635",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -17,7 +16,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-19 20:25:53.097635",
+ "modified": "2026-01-25 13:34:21.808091",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "Qualification",

@@ -1,14 +1,15 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "field:username",
+ "autoname": "field:email",
  "creation": "2025-12-16 18:38:20.622983",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "full_name",
+  "entity_type",
   "email",
-  "username",
+  "full_name",
+  "column_break_tkvu",
+  "entity",
   "password",
   "role_profile"
  ],
@@ -16,12 +17,7 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
-  },
-  {
-   "fieldname": "username",
-   "fieldtype": "Data",
-   "label": "Username",
+   "label": "Email",
    "unique": 1
   },
   {
@@ -39,12 +35,29 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Name"
+  },
+  {
+   "fieldname": "entity_type",
+   "fieldtype": "Link",
+   "label": "Entity Type",
+   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Franchise Partner\",\"Counsellor\", \"Student\"]]]",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "entity",
+   "fieldtype": "Dynamic Link",
+   "label": "Entity",
+   "options": "entity_type"
+  },
+  {
+   "fieldname": "column_break_tkvu",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-18 15:10:02.140238",
+ "modified": "2026-01-25 14:02:32.567821",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "App User",

@@ -16,20 +16,21 @@ def login(payload: dict) -> dict:
 	Returns:
 	    dict: A dictionary containing the login result.
 	"""
-	# Placeholder implementation
-	username = payload.get("username")
+	email = payload.get("email")
 	password = payload.get("password")
-	# decrypted_password = frappe.utils.password.get_decrypted_password("App User", username, fieldname="password")
-	# print(decrypted_password, "decrypted_password")
 
-	user = frappe.get_doc("App User", username)
+	user = frappe.get_doc("App User", email)
 
-	if frappe.utils.password.get_decrypted_password("App User", username, fieldname="password") == password:
-		user_details = {"username": user.username, "full_name": user.full_name, "role": user.role_profile}
-		token = generate_jwt_token(user_details, frappe.utils.password.get_encryption_key(), "HS256")
+	if frappe.utils.password.get_decrypted_password("App User", email, fieldname="password") == password:
+		user_details = {"email": user.email, "full_name": user.full_name, "role": user.role_profile}
+		token = generate_jwt_token(
+			{"entity_type": user.entity_type, "entity": user.entity, **user_details},
+			frappe.utils.password.get_encryption_key(),
+			"HS256",
+		)
 		return {"message": "Login successful.", "token": token, "user": user_details}
 	else:
-		raise frappe.AuthenticationError("Invalid username or password.")
+		raise frappe.AuthenticationError("Invalid email or password.")
 
 
 def generate_jwt_token(
