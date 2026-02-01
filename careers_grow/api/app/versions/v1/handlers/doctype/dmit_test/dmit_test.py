@@ -18,11 +18,16 @@ def get_dmit_test_list(payload):
 	filters = {entity_type_field_map[entity_type]: entity}
 
 	dmit_list = frappe.get_all(
-		"DMIT Test", ["student_id", "student_name", "modified"], filters, order_by="modified desc"
+		"DMIT Test",
+		["student_id", "student_name", "modified", "counsellor_id", "counsellor_name"],
+		filters,
+		order_by="modified desc",
 	)
 
 	for r in dmit_list:
 		r["student_id"] = f"({r['student_id']})"
+		r["counsellor_id"] = f"({r['counsellor_id']})"
+		r["counsellor_name"] = f"({r['counsellor_name']})"
 		r["modified"] = str(r["modified"]).split(".")[0]
 
 	return dmit_list
