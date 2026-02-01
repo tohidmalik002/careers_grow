@@ -13,12 +13,24 @@
   "counsellor_id",
   "counsellor_name",
   "franchise_name",
+  "mulitple_intelligence_section",
+  "mulitple_intelligence_logical",
+  "mulitple_intelligence_linguistic",
+  "mulitple_intelligence_interpersonal",
+  "mulitple_intelligence_naturalistic",
+  "column_break_t7cr",
+  "mulitple_intelligence_kinesthetic",
+  "mulitple_intelligence_visual_spatial",
+  "mulitple_intelligence_intrapersonal",
+  "mulitple_intelligence_musical",
   "brain_dominance_section",
   "left_brain",
   "right_brain",
   "column_break_opit",
   "trfc",
   "avg_trfc",
+  "personality_type_section",
+  "personality_type",
   "brain_lobes_section",
   "pre_frontal_lobe",
   "frontal_lobe",
@@ -311,12 +323,71 @@
    "hidden": 1,
    "label": "Franchise Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "mulitple_intelligence_section",
+   "fieldtype": "Section Break",
+   "label": "Mulitple Intelligence"
+  },
+  {
+   "fieldname": "mulitple_intelligence_logical",
+   "fieldtype": "Percent",
+   "label": "Logical"
+  },
+  {
+   "fieldname": "mulitple_intelligence_linguistic",
+   "fieldtype": "Percent",
+   "label": "Linguistic"
+  },
+  {
+   "fieldname": "mulitple_intelligence_interpersonal",
+   "fieldtype": "Percent",
+   "label": "Interpersonal"
+  },
+  {
+   "fieldname": "mulitple_intelligence_naturalistic",
+   "fieldtype": "Percent",
+   "label": "Naturalistic"
+  },
+  {
+   "fieldname": "column_break_t7cr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mulitple_intelligence_kinesthetic",
+   "fieldtype": "Percent",
+   "label": "Kinesthetic"
+  },
+  {
+   "fieldname": "mulitple_intelligence_visual_spatial",
+   "fieldtype": "Percent",
+   "label": "Visual Spatial"
+  },
+  {
+   "fieldname": "mulitple_intelligence_intrapersonal",
+   "fieldtype": "Percent",
+   "label": "Intrapersonal"
+  },
+  {
+   "fieldname": "mulitple_intelligence_musical",
+   "fieldtype": "Percent",
+   "label": "Musical"
+  },
+  {
+   "fieldname": "personality_type_section",
+   "fieldtype": "Section Break",
+   "label": "Personality Type"
+  },
+  {
+   "fieldname": "personality_type",
+   "fieldtype": "Long Text",
+   "label": "Personality Type"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-25 13:31:54.218659",
+ "modified": "2026-02-01 12:42:13.513798",
  "modified_by": "Administrator",
  "module": "Careers Grow",
  "name": "DMIT Test",
