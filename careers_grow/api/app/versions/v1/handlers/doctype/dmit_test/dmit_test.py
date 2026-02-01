@@ -135,10 +135,7 @@ def get_dmit_test_data(payload):
 			"trfc": doc.get("trfc", 00.0),
 			"avg_trfc": doc.get("avg_trfc", 00.0),
 		},
-		"personality_type": {
-			"naturalistic": float_to_percentage_string(doc.get("personality_type_naturalistic")),
-			"musical": float_to_percentage_string(doc.get("personality_type_musical")),
-		},
+		"personality_type": doc.get("personality_type"),
 		"brain_lobes": {
 			"pre_frontal": {
 				"text": float_to_percentage_string(doc.get("pre_frontal_lobe")),
