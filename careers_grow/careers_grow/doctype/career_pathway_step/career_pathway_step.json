@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "creation": "2026-03-23 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break",
+  "step_order",
+  "step_type",
+  "step_reference",
+  "column_break_1",
+  "level",
+  "duration"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "step_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Step Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "step_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Step Type",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "step_reference",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Step Reference",
+   "options": "step_type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "step_reference.level",
+   "fieldname": "level",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Level",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "step_reference.duration",
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Duration",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Careers Grow",
+ "name": "Career Pathway Step",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
