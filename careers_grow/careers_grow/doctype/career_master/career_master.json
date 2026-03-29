@@ -1,0 +1,254 @@
+{
+ "actions": [],
+ "autoname": "field:career_name",
+ "creation": "2026-03-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_overview",
+  "section_basic",
+  "career_name",
+  "industry_type",
+  "column_break_basic",
+  "work_environment",
+  "section_qualification",
+  "qualification_required",
+  "section_salary_prospects",
+  "entry_level_salary",
+  "experienced_salary",
+  "column_break_salary",
+  "overseas_demand",
+  "growth_scope",
+  "section_govt",
+  "govt_job_options",
+  "section_description",
+  "career_description",
+  "tab_pathways",
+  "section_pathways",
+  "career_pathways",
+  "tab_skills",
+  "section_skills",
+  "skills",
+  "section_specializations",
+  "specializations",
+  "tab_industry",
+  "section_sectors",
+  "hiring_sectors",
+  "section_job_roles",
+  "job_roles",
+  "tab_salary",
+  "section_salary_details",
+  "salary_ranges"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_overview",
+   "fieldtype": "Tab Break",
+   "label": "Career Overview"
+  },
+  {
+   "fieldname": "section_basic",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "career_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Career Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "industry_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Industry Type",
+   "options": "Industry Type"
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_environment",
+   "fieldtype": "Link",
+   "label": "Work Environment",
+   "options": "Work Environment"
+  },
+  {
+   "fieldname": "section_qualification",
+   "fieldtype": "Section Break",
+   "label": "Qualification Required"
+  },
+  {
+   "fieldname": "qualification_required",
+   "fieldtype": "Table MultiSelect",
+   "label": "Qualification Required",
+   "options": "Career Master Qualification"
+  },
+  {
+   "fieldname": "section_salary_prospects",
+   "fieldtype": "Section Break",
+   "label": "Salary & Prospects"
+  },
+  {
+   "fieldname": "entry_level_salary",
+   "fieldtype": "Data",
+   "label": "Entry-Level Salary"
+  },
+  {
+   "fieldname": "experienced_salary",
+   "fieldtype": "Data",
+   "label": "Experienced Salary"
+  },
+  {
+   "fieldname": "column_break_salary",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overseas_demand",
+   "fieldtype": "Link",
+   "label": "Overseas Demand",
+   "options": "Overseas Demand"
+  },
+  {
+   "fieldname": "growth_scope",
+   "fieldtype": "Link",
+   "label": "Growth Scope",
+   "options": "Growth Scope"
+  },
+  {
+   "fieldname": "section_govt",
+   "fieldtype": "Section Break",
+   "label": "Govt Job Options"
+  },
+  {
+   "fieldname": "govt_job_options",
+   "fieldtype": "Table MultiSelect",
+   "label": "Govt Job Options",
+   "options": "Career Master Govt Job Option"
+  },
+  {
+   "fieldname": "section_description",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "career_description",
+   "fieldtype": "Text Editor",
+   "label": "Career Description"
+  },
+  {
+   "fieldname": "tab_pathways",
+   "fieldtype": "Tab Break",
+   "label": "Pathways"
+  },
+  {
+   "fieldname": "section_pathways",
+   "fieldtype": "Section Break",
+   "label": "Career Pathways"
+  },
+  {
+   "fieldname": "career_pathways",
+   "fieldtype": "Table",
+   "label": "Career Pathways",
+   "options": "Career Master Pathway"
+  },
+  {
+   "fieldname": "tab_skills",
+   "fieldtype": "Tab Break",
+   "label": "Skills & Specializations"
+  },
+  {
+   "fieldname": "section_skills",
+   "fieldtype": "Section Break",
+   "label": "Required Skills"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Table",
+   "label": "Required Skills",
+   "options": "Career Master Skill"
+  },
+  {
+   "fieldname": "section_specializations",
+   "fieldtype": "Section Break",
+   "label": "Major Specializations"
+  },
+  {
+   "fieldname": "specializations",
+   "fieldtype": "Table",
+   "label": "Major Specializations",
+   "options": "Career Master Specialization"
+  },
+  {
+   "fieldname": "tab_industry",
+   "fieldtype": "Tab Break",
+   "label": "Industry & Roles"
+  },
+  {
+   "fieldname": "section_sectors",
+   "fieldtype": "Section Break",
+   "label": "Key Hiring Sectors"
+  },
+  {
+   "fieldname": "hiring_sectors",
+   "fieldtype": "Table",
+   "label": "Key Hiring Sectors",
+   "options": "Career Master Hiring Sector"
+  },
+  {
+   "fieldname": "section_job_roles",
+   "fieldtype": "Section Break",
+   "label": "Common Job Roles"
+  },
+  {
+   "fieldname": "job_roles",
+   "fieldtype": "Table",
+   "label": "Common Job Roles",
+   "options": "Career Master Job Role"
+  },
+  {
+   "fieldname": "tab_salary",
+   "fieldtype": "Tab Break",
+   "label": "Salary Details"
+  },
+  {
+   "fieldname": "section_salary_details",
+   "fieldtype": "Section Break",
+   "label": "Salary by Experience"
+  },
+  {
+   "fieldname": "salary_ranges",
+   "fieldtype": "Table",
+   "label": "Salary Ranges",
+   "options": "Career Master Salary Range"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Careers Grow",
+ "name": "Career Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,24 @@
+{
+ "actions": [],
+ "creation": "2026-03-23 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": ["section_break", "sector"],
+ "fields": [
+  {"fieldname": "section_break", "fieldtype": "Section Break"},
+  {"fieldname": "sector", "fieldtype": "Link", "in_list_view": 1, "label": "Sector", "options": "Career Sector", "reqd": 1}
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Careers Grow",
+ "name": "Career Master Hiring Sector",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

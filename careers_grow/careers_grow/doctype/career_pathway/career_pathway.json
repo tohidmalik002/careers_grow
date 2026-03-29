@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "autoname": "format:{career}-{pathway_type}-{pathway_name}",
+ "creation": "2026-03-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break",
+  "career",
+  "pathway_type",
+  "column_break_1",
+  "pathway_name",
+  "section_break_steps",
+  "steps"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break",
+   "label": "Career Pathway"
+  },
+  {
+   "fieldname": "career",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Career",
+   "options": "Career Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pathway_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pathway Type",
+   "options": "Pathway Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pathway_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pathway Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_steps",
+   "fieldtype": "Section Break",
+   "label": "Pathway Steps"
+  },
+  {
+   "fieldname": "steps",
+   "fieldtype": "Table",
+   "label": "Steps",
+   "options": "Career Pathway Step",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Careers Grow",
+ "name": "Career Pathway",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
